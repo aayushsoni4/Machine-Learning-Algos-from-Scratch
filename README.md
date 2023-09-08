@@ -39,7 +39,7 @@ To embark on your journey with this repository, follow these steps:
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/Machine-Learning-Algos-from-Scratch.git
+    git clone https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch.git
     ```
 
 2. Create a virtual environment using Python's venv module. Replace 'venv-name' with your preferred name:
