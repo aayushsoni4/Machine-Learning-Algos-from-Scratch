@@ -28,7 +28,7 @@ We invite you to delve into the code, run examples, and connect with us if you h
 
 Here's a comprehensive list of machine learning algorithms available in this repository:
 
-1. [Linear Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/blob/main/LinearRegression.py) - Linear regression stands as a foundational algorithm for modeling the relationship between dependent and independent variables. It is a cornerstone in the domains of machine learning and statistical modeling.
+1. [Linear Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Linear%20Regression) - Linear regression stands as a foundational algorithm for modeling the relationship between dependent and independent variables. It is a cornerstone in the domains of machine learning and statistical modeling.
 
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
