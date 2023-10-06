@@ -30,6 +30,8 @@ Here's a comprehensive list of machine learning algorithms available in this rep
 
 1. [Linear Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Linear%20Regression) - Linear regression stands as a foundational algorithm for modeling the relationship between dependent and independent variables. It is a cornerstone in the domains of machine learning and statistical modeling.
 
+2. [Logistic Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Logistic%20Regression) - Logistic regression is a fundamental classification algorithm used to model the probability of a binary outcome. It's widely employed in machine learning for tasks such as binary classification and has applications in various domains, including healthcare, finance, and marketing.
+
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
 ## Usage
