@@ -32,6 +32,8 @@ Here's a comprehensive list of machine learning algorithms available in this rep
 
 2. [Logistic Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Logistic%20Regression) - Logistic regression is a fundamental classification algorithm used to model the probability of a binary outcome. It's widely employed in machine learning for tasks such as binary classification and has applications in various domains, including healthcare, finance, and marketing.
 
+3. [Naive Bayes](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Naive%20Bayes) - Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It is particularly suitable for text classification and spam filtering.
+
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
 ## Usage
