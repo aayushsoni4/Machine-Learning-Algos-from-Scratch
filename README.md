@@ -34,6 +34,8 @@ Here's a comprehensive list of machine learning algorithms available in this rep
 
 3. [Naive Bayes](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Naive%20Bayes) - Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It is particularly suitable for text classification and spam filtering.
 
+4. [KMeans](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/K-Means%20Clustering) - KMeans is an unsupervised clustering algorithm used to partition data into K clusters based on similarity.
+
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
 ## Usage
