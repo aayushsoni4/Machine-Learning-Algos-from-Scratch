@@ -1,6 +1,7 @@
 import numpy as np
 from collections import Counter
 
+
 class Node:
     """
     Node in the decision tree.
@@ -13,7 +14,9 @@ class Node:
     - value: Value of the node for leaf nodes (class label or regression value).
     """
 
-    def __init__(self, features=None, threshold=None, left=None, right=None, *, value=None):
+    def __init__(
+        self, features=None, threshold=None, left=None, right=None, *, value=None
+    ):
         """
         Initialize a node in the decision tree.
 
@@ -90,7 +93,7 @@ class DecisionTreeRegressor:
         n_samples, n_features = X.shape
 
         # stopping criteria
-        if (depth >= self.max_depth or n_samples < self.min_samples_split):
+        if depth >= self.max_depth or n_samples < self.min_samples_split:
             leaf_value = np.mean(y)
             return Node(value=leaf_value)
 
