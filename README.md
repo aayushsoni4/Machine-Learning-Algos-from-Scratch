@@ -40,6 +40,8 @@ Here's a comprehensive list of machine learning algorithms available in this rep
 
 6. [Decision Tree](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Decision%20Tree) - Decision Tree is a versatile supervised learning algorithm that recursively partitions the data based on feature values, forming a tree-like structure. It's widely used for both classification and regression tasks, providing interpretable and easy-to-understand models suitable for various domains such as finance, healthcare, and marketing.
 
+7. [Random Forest](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Decision%20Tree/Random%20Forest) - An ensemble learning method that constructs multiple decision trees during training and outputs the class mode or mean prediction of the individual trees. It offers enhanced accuracy and robustness compared to single decision trees and is widely utilized for classification and regression tasks across domains.
+
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
 ## Usage
