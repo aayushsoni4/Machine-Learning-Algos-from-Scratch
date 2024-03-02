@@ -1,6 +1,15 @@
 import numpy as np
 
 class NaiveBayes:
+    """
+    Naive Bayes classifier implementation.
+
+    Attributes:
+    - _mean: Mean of each feature for each class.
+    - _var: Variance of each feature for each class.
+    - _priors: Prior probabilities of each class.
+    - _classes: Unique classes in the training data.
+    """
     
     def __init__(self):
         '''
