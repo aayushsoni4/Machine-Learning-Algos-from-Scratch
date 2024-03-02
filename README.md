@@ -26,15 +26,17 @@ We invite you to delve into the code, run examples, and connect with us if you h
 
 ## Algorithms Included
 
-Here's a comprehensive list of machine learning algorithms available in this repository:
+Here's a comprehensive list of machine learning algorithms available in this repository, along with brief explanations:
 
-1. [Linear Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Linear%20Regression) - Linear regression stands as a foundational algorithm for modeling the relationship between dependent and independent variables. It is a cornerstone in the domains of machine learning and statistical modeling.
+1. [Linear Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Linear%20Regression) - Linear regression is a foundational algorithm for modeling the relationship between dependent and independent variables. It is widely used in statistics and machine learning for tasks such as prediction and forecasting.
 
 2. [Logistic Regression](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Logistic%20Regression) - Logistic regression is a fundamental classification algorithm used to model the probability of a binary outcome. It's widely employed in machine learning for tasks such as binary classification and has applications in various domains, including healthcare, finance, and marketing.
 
-3. [Naive Bayes](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Naive%20Bayes) - Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It is particularly suitable for text classification and spam filtering.
+3. [Naive Bayes](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Naive%20Bayes) - Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It assumes that features are independent and is particularly suitable for text classification and spam filtering.
 
-4. [KMeans](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/K-Means%20Clustering) - KMeans is an unsupervised clustering algorithm used to partition data into K clusters based on similarity.
+4. [KMeans](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/K-Means%20Clustering) - KMeans is an unsupervised clustering algorithm used to partition data into K clusters based on similarity. It is widely used for data analysis and exploration.
+
+5. [Perceptron](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Neural%20Network) - Perceptron is a binary linear classifier used for supervised learning of binary classifiers. It is one of the simplest neural network architectures and forms the basis for more complex models.
 
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
