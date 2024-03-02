@@ -10,11 +10,15 @@ bc = datasets.load_breast_cancer()
 X, y = bc.data, bc.target
 
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=1234
+)
+
 
 # Define a function to calculate classification accuracy
 def accuracy(y_true, y_pred):
     return np.sum(y_true == y_pred) / len(y_true)
+
 
 # Create a LogisticRegression object with specified hyperparameters
 regressor = LogisticRegression(lr=0.0001, n_iters=1000)
@@ -27,4 +31,6 @@ prediction = regressor.predict(X_test)
 
 # Calculate and print the classification accuracy
 accuracy_percentage = accuracy(y_test, prediction) * 100
-print("Logistic Regression classification accuracy: {:.2f}%".format(accuracy_percentage))
+print(
+    "Logistic Regression classification accuracy: {:.2f}%".format(accuracy_percentage)
+)

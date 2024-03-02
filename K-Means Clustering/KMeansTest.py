@@ -22,12 +22,12 @@ predicted_labels = kmeans.predict(X)
 plt.figure(figsize=(8, 6))
 for i in range(kmeans.K):
     cluster_points = X[predicted_labels == i]
-    plt.scatter(cluster_points[:, 0], cluster_points[:, 1], label=f'Cluster {i}')
+    plt.scatter(cluster_points[:, 0], cluster_points[:, 1], label=f"Cluster {i}")
 
 centroids = kmeans.centroids
-plt.scatter(centroids[:, 0], centroids[:, 1], color='k', marker='x', label='Centroids')
-plt.title('KMeans Clustering')
-plt.xlabel('X')
-plt.ylabel('Y')
+plt.scatter(centroids[:, 0], centroids[:, 1], color="k", marker="x", label="Centroids")
+plt.title("KMeans Clustering")
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.legend()
 plt.show()

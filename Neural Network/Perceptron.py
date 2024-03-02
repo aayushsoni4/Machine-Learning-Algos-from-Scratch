@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class Perceptron:
     """
     Perceptron classifier.
@@ -22,7 +23,7 @@ class Perceptron:
         self.activation_func = self._unit_step_func
         self.weight = None
         self.bias = None
-        
+
     def fit(self, X, y):
         """
         Fit the Perceptron model to the training data.
@@ -34,19 +35,19 @@ class Perceptron:
         n_samples, n_features = X.shape
         self.weight = np.zeros(n_features)
         self.bias = 0
-        
+
         # Convert target values to binary (0 or 1)
-        y_ = np.array([1 if i > 0 else 0 for i in y]) 
+        y_ = np.array([1 if i > 0 else 0 for i in y])
 
         for _ in range(self.n_iters):
             for idx, x_i in enumerate(X):
                 linear_output = np.dot(x_i, self.weight) + self.bias
                 y_predicted = self.activation_func(linear_output)
-                
+
                 update = self.lr * (y_predicted - y_[idx])
                 self.weight -= update * x_i
                 self.bias -= update
-                
+
     def predict(self, X):
         """
         Make predictions on new data.
@@ -60,7 +61,7 @@ class Perceptron:
         linear_output = np.dot(X, self.weight) + self.bias
         y_predicted = self.activation_func(linear_output)
         return y_predicted
-        
+
     def _unit_step_func(self, x):
         """
         Step function for activation.

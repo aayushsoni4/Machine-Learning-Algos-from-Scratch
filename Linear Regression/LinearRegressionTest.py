@@ -21,9 +21,11 @@ LR.fit(X_train, y_train)
 # Predict the target values on the test set
 predicted = LR.predict(X_test)
 
+
 # Define a function to calculate Mean Squared Error (MSE)
 def mse(y_test, predicted):
     return np.mean((y_test - predicted) ** 2)
+
 
 # Calculate and print the MSE between predicted and actual values
 mse_value = mse(y_test, predicted)
@@ -33,18 +35,18 @@ print(mse_value)
 y_pred_line = LR.predict(X)
 
 # Create a scatter plot to visualize the data points
-cmap = plt.get_cmap('viridis')
+cmap = plt.get_cmap("viridis")
 fig = plt.figure(figsize=(8, 6))
-m1 = plt.scatter(X_train, y_train, color=cmap(0.9), s=10, label='Training Data')
-m2 = plt.scatter(X_test, y_test, color=cmap(0.5), s=10, label='Testing Data')
+m1 = plt.scatter(X_train, y_train, color=cmap(0.9), s=10, label="Training Data")
+m2 = plt.scatter(X_test, y_test, color=cmap(0.5), s=10, label="Testing Data")
 
 # Plot the linear regression line
-plt.plot(X, y_pred_line, color='black', linewidth=2, label='Prediction')
+plt.plot(X, y_pred_line, color="black", linewidth=2, label="Prediction")
 
 # Add labels and legend to the plot
-plt.xlabel('X')
-plt.ylabel('y')
-plt.legend(loc='upper left')
+plt.xlabel("X")
+plt.ylabel("y")
+plt.legend(loc="upper left")
 
 # Display the plot
 plt.show()
