@@ -38,6 +38,8 @@ Here's a comprehensive list of machine learning algorithms available in this rep
 
 5. [Perceptron](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Neural%20Network) - Perceptron is a binary linear classifier used for supervised learning of binary classifiers. It is one of the simplest neural network architectures and forms the basis for more complex models.
 
+6. [Decision Tree](https://github.com/aayushsoni4/Machine-Learning-Algos-from-Scratch/tree/main/Decision%20Tree) - Decision Tree is a versatile supervised learning algorithm that recursively partitions the data based on feature values, forming a tree-like structure. It's widely used for both classification and regression tasks, providing interpretable and easy-to-understand models suitable for various domains such as finance, healthcare, and marketing.
+
 Each algorithm is implemented in Python and meticulously documented to facilitate comprehension of both the code and the underlying principles.
 
 ## Usage
