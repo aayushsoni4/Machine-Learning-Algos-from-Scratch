@@ -56,6 +56,10 @@ class KMeans:
                 # Step 2: Assign data points to clusters
                 clusters = self._assign_clusters(centroids)
 
+                # Plotting at each step
+                if self.plot_steps:
+                    self.plot_clusters(X, centroids, clusters)
+
                 # Step 3: Update centroids
                 prev_centroids = centroids
                 centroids = self._update_centroids(clusters)
@@ -64,23 +68,19 @@ class KMeans:
                 if self._is_converged(prev_centroids, centroids):
                     break
 
-            # Calculate inertia
-            inertia = self._calculate_inertia(clusters, centroids)
+                # Calculate inertia
+                inertia = self._calculate_inertia(clusters, centroids)
 
-            # Update best centroids and minimum inertia if current inertia is lower
-            if inertia < min_inertia:
-                min_inertia = inertia
-                best_centroids = centroids.copy()
+                # Update best centroids and minimum inertia if current inertia is lower
+                if inertia < min_inertia:
+                    min_inertia = inertia
+                    best_centroids = centroids.copy()
 
         # Set the best centroids found
         self.centroids = best_centroids
 
         # Assign data points to final clusters
         self.clusters = self._assign_clusters(self.centroids)
-
-        # Plotting (optional)
-        if self.plot_steps:
-            self.plot()
 
     def _assign_clusters(self, centroids):
         """
@@ -165,21 +165,27 @@ class KMeans:
         labels = np.argmin(distances, axis=1)
         return labels
 
-    def plot(self):
+    def plot_clusters(self, X, centroids, clusters):
         """
         Plot the clusters and centroids.
+
+        Parameters:
+        - X: Input data (numpy array).
+        - centroids: List of centroids.
+        - clusters: List of clusters.
         """
+        centroids = np.array(centroids)
         plt.figure(figsize=(12, 8))
-        for cluster_idx, cluster in enumerate(self.clusters):
-            cluster_points = self.X[cluster]
+        for cluster_idx, cluster in enumerate(clusters):
+            cluster_points = X[cluster]
             plt.scatter(
                 cluster_points[:, 0],
                 cluster_points[:, 1],
                 label=f"Cluster {cluster_idx}",
             )
         plt.scatter(
-            np.array(self.centroids)[:, 0],
-            np.array(self.centroids)[:, 1],
+            centroids[:, 0],
+            centroids[:, 1],
             color="k",
             marker="x",
             label="Centroids",

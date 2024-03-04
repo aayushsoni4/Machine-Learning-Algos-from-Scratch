@@ -10,7 +10,7 @@ X, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
 from KMeans import KMeans
 
 # Create a KMeans object with the desired number of clusters
-kmeans = KMeans(K=4)
+kmeans = KMeans(K=4, plot_steps=True)
 
 # Fit the KMeans model on the data
 kmeans.fit(X)
